@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_statspb" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+        >
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TableRow
+                android:id="@+id/field_goals_attem_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/left_goals_attempted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_label"
+                    android:text="@string/field_goals_attempted"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_goals_attempted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/field_goals_attem_pb_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/left_progress_goals_attempted"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left"
+                    android:rotation="0"
+                    android:rotationX="0"
+                    android:rotationY="@dimen/rotation" />
+
+                <ProgressBar
+                    android:id="@+id/right_progress_goals_attempted"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:backgroundTint="#DF1F1F"
+                    android:theme="@style/ProgressBarStyle"
+                    tools:layout_editor_absoluteX="199dp"
+                    tools:layout_editor_absoluteY="39dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/field_goals_made_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/left_goals_made"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_label"
+                    android:text="@string/field_goals_made"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_goals_made"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/field_goals_made_pb_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/left_progress_goals_made"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left"
+                    android:rotationY="@dimen/rotation" />
+
+                <ProgressBar
+                    android:id="@+id/right_progress_goals_made"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle"
+                    tools:layout_editor_absoluteX="199dp"
+                    tools:layout_editor_absoluteY="89dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/field_goals_perc_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/left_goals_perc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_label"
+                    android:text="@string/field_goals_perc"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_goals_perc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/field_goals_perc_pb_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/left_progress_goals_perc"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left"
+                    android:rotationY="@dimen/rotation" />
+
+                <ProgressBar
+                    android:id="@+id/right_progress_goals_perc"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle"
+                    tools:layout_editor_absoluteX="199dp"
+                    tools:layout_editor_absoluteY="139dp" />
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/three_goals_attem_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/left_three_goal_attempted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/three_goals_attemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_label"
+                    android:text="@string/three_point_attempted"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_three_goals_attem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/three_goals_attem_pb_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/left_progress_three_goals_attempted"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left"
+                    android:rotationY="@dimen/rotation" />
+
+                <ProgressBar
+                    android:id="@+id/right_progress_three_goals_attempted"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/three_goals_made_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/left_three_goals_made"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/three_goals_made"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_label"
+                    android:text="@string/three_point_made"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_three_goals_made"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/three_goals_made_pb_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/left_progress_three_goals_made"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left"
+                    android:rotationY="@dimen/rotation" />
+
+                <ProgressBar
+                    android:id="@+id/right_progress_three_goals_made"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle"
+                    tools:layout_editor_absoluteX="199dp"
+                    tools:layout_editor_absoluteY="238dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/two_goals_attemp_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/left_two_goals_attempted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_label"
+                    android:text="@string/two_point_attempted"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_two_point_attempted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/two_goals_attemp_pb_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/left_progress_two_goals_attempted"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left"
+                    android:rotationY="@dimen/rotation" />
+
+                <ProgressBar
+                    android:id="@+id/right_progress_two_points_attempted"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/two_goals_made_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/left_two_goals_made"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_label"
+                    android:text="@string/two_point_made"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_two_point_made"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/two_goals_made_pb_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/left_progress_two_points_made"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left"
+                    android:rotationY="@dimen/rotation" />
+
+                <ProgressBar
+                    android:id="@+id/right_progress_two_points_made"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/free_goals_attemp_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/left_free_throws_attempted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_label"
+                    android:text="@string/free_throws_attempted"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_free_throws_attempted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/free_goals_attemp_pb_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/left_progress_free_throws_attempted"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left"
+                    android:rotationY="@dimen/rotation" />
+
+                <ProgressBar
+                    android:id="@+id/right_progress_free_throws_attempted"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/free_goals_made_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/left_free_throws_made"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_label"
+                    android:text="@string/free_throws_made"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_free_throws_made"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/free_goals_made_pb_row"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/left_progress_free_throws_made"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left"
+                    android:rotationY="@dimen/rotation" />
+
+                <ProgressBar
+                    android:id="@+id/right_progress_free_throws_made"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/assists_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/left_assists"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore" />
+
+                <TextView
+                    android:id="@+id/assist_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/assists"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_assists"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/assists_pb_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/assists_lpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left" />
+
+                <ProgressBar
+                    android:id="@+id/assists_rpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/blocks_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/left_blocks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blocks"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_blocks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/blocks_pb_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/blocks_lpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left" />
+
+                <ProgressBar
+                    android:id="@+id/blocks_rpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/fouls_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/left_fouls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fouls"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_fouls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/fouls_pb_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/fouls_lpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left" />
+
+                <ProgressBar
+                    android:id="@+id/fouls_rpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/mistakes_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/left_mistakes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mistakes"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_mistakes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/mistakes_pb_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/mistakes_lpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left" />
+
+                <ProgressBar
+                    android:id="@+id/mistakes_rpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rebounds_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/left_rebounds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rebounds"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/rigth_rebounds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rebounds_pb_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_bottom">
+
+                <ProgressBar
+                    android:id="@+id/rebounds_lpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left" />
+
+                <ProgressBar
+                    android:id="@+id/rebounds_rpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/steals_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/left_steals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_lscore" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/steals"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/right_steals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_divide_rscore"
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/steals_pb_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/steals_lpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_left" />
+
+                <ProgressBar
+                    android:id="@+id/steals_rpb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@dimen/layout_progress_right"
+                    android:theme="@style/ProgressBarStyle" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

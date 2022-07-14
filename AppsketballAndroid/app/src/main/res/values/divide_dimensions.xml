@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layout_divide_lscore" type="dimen">3</item>
+    <item name="layout_divide_rscore" type="dimen">5</item>
+    <item name="layout_divide_label" type="dimen">2</item>
+    <item name="layout_progress_left" type="dimen">6</item>
+    <item name="layout_progress_right" type="dimen">1</item>
+    <item name="margin_bottom" type="dimen">10dp</item>
+    <item name="rotation" type="dimen">180</item>
+</resources>

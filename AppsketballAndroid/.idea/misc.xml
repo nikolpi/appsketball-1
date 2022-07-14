@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Dev/University/appsketball/AppsketballAndroid/app/src/main/res/layout/activity_login.xml" value="0.21145833333333333" />
+        <entry key="..\:/Dev/University/appsketball/AppsketballAndroid/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Dev/University/appsketball/AppsketballAndroid/app/src/main/res/layout/activity_message.xml" value="0.3625" />
+        <entry key="..\:/Dev/University/appsketball/AppsketballAndroid/app/src/main/res/layout/activity_register.xml" value="0.3625" />
+        <entry key="..\:/Dev/University/appsketball/AppsketballAndroid/app/src/main/res/layout/after_match_stat_activity.xml" value="0.3625" />
+        <entry key="..\:/Users/Nikoleta/Desktop/8o/appsketball/AppsketballAndroid/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/Nikoleta/Desktop/8o/appsketball/AppsketballAndroid/app/src/main/res/layout/after_match_stat_activity.xml" value="0.25" />
+        <entry key="..\:/Users/Nikoleta/Desktop/8o/appsketball/AppsketballAndroid/app/src/main/res/layout/events_list_away.xml" value="0.1171875" />
+        <entry key="..\:/Users/Nikoleta/Desktop/8o/appsketball/AppsketballAndroid/app/src/main/res/layout/fragment_score.xml" value="0.22" />
+        <entry key="..\:/Users/Nikoleta/Desktop/8o/appsketball/AppsketballAndroid/app/src/main/res/layout/fragment_second.xml" value="0.1796875" />
+        <entry key="..\:/Users/Nikoleta/Desktop/8o/appsketball/AppsketballAndroid/app/src/main/res/layout/fragment_statspb.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

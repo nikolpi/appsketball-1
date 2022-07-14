@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/leftScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/statLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/rightScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/statLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/connector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/statLabel"
+        app:layout_constraintEnd_toStartOf="@+id/rightScore"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toEndOf="@+id/leftScore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/statLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stat_label"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <TextView
+        android:id="@+id/teamsPlaying_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/statLabel"
+        app:layout_constraintEnd_toEndOf="@+id/rightScore"
+        app:layout_constraintStart_toStartOf="@+id/leftScore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statLabel">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/game_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="@string/final_game"
+                android:textColor="@color/white"
+                app:rippleColor="@color/teal_200" />
+
+            <Button
+                android:id="@+id/firstPeriod_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="@string/first_period"
+                android:textColor="@color/white"
+                app:rippleColor="@color/teal_200" />
+
+            <Button
+                android:id="@+id/secondPeriod_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="@string/second_period"
+                android:textColor="@color/white"
+                app:rippleColor="@color/teal_200" />
+
+            <Button
+                android:id="@+id/thirdPeriod_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="@string/third_period"
+                android:textColor="@color/white"
+                app:rippleColor="@color/teal_200" />
+
+            <Button
+                android:id="@+id/fourthPeriod_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fourth_period"
+                android:textColor="@color/white"
+                app:rippleColor="@color/teal_200" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/stat_fragment"
+        android:name="com.example.appsketballandroid.fragment_statspb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

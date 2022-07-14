@@ -1,0 +1,77 @@
+<resources>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="app_name">Appsketball</string>
+    <string name="register_btn">REGISTER</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="stat_label">STATISTICS</string>
+    <string name="final_game">GAME</string>
+    <string name="first_period">1st period</string>
+    <string name="second_period">2nd period</string>
+    <string name="third_period">3rd period</string>
+    <string name="fourth_period">4th period</string>
+    <string name="field_goals_attempted">Field Goals Attempted</string>
+    <string name="field_goals_made">Field Goals Made</string>
+    <string name="field_goals_perc">Field Goals %</string>
+    <string name="two_point_attempted">2-Point Field Goals Attempted</string>
+    <string name="two_point_made">2-Point Field Goals Made</string>
+    <string name="two_point_perc">2-Point Field Goals %</string>
+    <string name="three_point_attempted">3-Point Field Goals Attempted</string>
+    <string name="three_point_made">3-Point Field Goals Made</string>
+    <string name="three_point_perc">3-Point Field Goals %</string>
+    <string name="free_throws_attempted">Free Throws Attempted</string>
+    <string name="free_throws_made">Free Throws Made</string>
+    <string name="free_throws_perc">Free Throws %</string>
+    <string name="rebounds">Rebounds</string>
+    <string name="assists">Assists</string>
+    <string name="steals">Steals</string>
+    <string name="fouls">Fouls</string>
+    <string name="mistakes">Mistakes</string>
+    <string name="blocks">Blocks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_after_match_stat">after_match_stat</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="app_name2">R8</string>
+    <string name="placechamphere">PlaceChampHere</string>
+    <string name="solostats">Personal Stat</string>
+    <string name="top_5">Top 5</string>
+    <string name="teamsscore">Team Score</string>
+    <string name="teamsstats">Team Statistics</string>
+    <string name="totalshoots">Total Shots</string>
+    <string name="rebound">Rebound</string>
+    <string name="missplacedshoots">Missed Shots</string>
+    <string name="cut">Cut</string>
+    <string name="steal">Steal</string>
+    <string name="aptlyshoots">Made Shots</string>
+    <string name="assist">Assists</string>
+    <string name="faul">Fouls</string>
+    <string name="assistpoints">0</string>
+    <string name="cutpoints">0</string>
+    <string name="missplacedshootspoints">0</string>
+    <string name="reboundpoints">0</string>
+    <string name="faulpoints">0</string>
+    <string name="stealpoints">0</string>
+    <string name="aptlyshootspoints">0</string>
+    <string name="totalshootspoints">0</string>
+    <string name="live_games">Live Games</string>
+    <string name="all_games">All Games</string>
+    <string name="full_stats">Full Stats</string>
+
+    <string-array name="names">
+        <item>Team1</item>
+        <item>Team2</item>
+        <item>Team3</item>
+        <item>Team4</item>
+    </string-array>
+</resources>
